@@ -72,13 +72,14 @@ class App extends Component {
     return (
       <div className="container">
         <div className="amount-due">
-          <b>How much was do?</b>
+          <b>How much is do?</b>
           <input type="number" className="form-control" name='amountDue' value={this.state.amountDue} onChange={this.handleChange} />
         </div>
         <div className="amount-received">
           <b>How much was received?</b>
           <input type="number" className="form-control" name='amountReceived' value={this.state.amountReceived} onChange={this.handleChange} />
         </div>
+        <button onClick={this.calculateChange}>Calculate</button>
 
         <div className="card text-center">
           <div className="card-header">
